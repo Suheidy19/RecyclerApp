@@ -18,18 +18,6 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="@string/add_flower"
-        android:textAlignment="center"
-        android:textAppearance="?attr/textAppearanceHeadline4" />
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -39,20 +27,29 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/add_flower"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceHeadline4" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:hint="@string/flower_name_edit_text"
                 android:paddingTop="16dp"
-                android:paddingBottom="16dp">
+                android:paddingBottom="16dp"
+                android:visibility="visible">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/add_flower_name"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textMultiLine" />
-
+                    android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,7 +64,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/add_flower_description"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:hint="Tamaño"
+                android:hint="@string/flower_tamanio_edit_text"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
@@ -91,7 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:hint="Nombre Cientifico"
+                android:hint="@string/flower_nombreCientifico_edit_text"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
@@ -107,7 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:hint="Tipo"
+                android:hint="@string/flower_tipo_edit_text"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
@@ -123,7 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:hint="Color"
+                android:hint="@string/flower_color_edit_text"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
@@ -133,17 +131,15 @@
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine" />
 
-                <Button
-                    android:id="@+id/done_button"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="240dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/done_button_text" />
-
             </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/done_button"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/done_button_text" />
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
-

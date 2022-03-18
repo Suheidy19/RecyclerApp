@@ -53,6 +53,10 @@
     <string name="flower_finder">Flower finder</string>
     <string name="flower_description_edit_text">Flower Description</string>
     <string name="flower_name_edit_text">Flower Name</string>
+    <string name="flower_tamanio_edit_text">Flower Tamaño</string>
+    <string name="flower_tipo_edit_text">Flower Tipo</string>
+    <string name="flower_nombreCientifico_edit_text">Flower nombre cientifico</string>
+    <string name="flower_color_edit_text">Flower Color</string>
     <string name="done_button_text">Guardar</string>
     <string name="fab_content_description">fab</string>
     <string name="flower_image_content_description">Image of flower</string>
